@@ -1,0 +1,136 @@
+body {
+  margin: 0;
+  font-family: Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #bdb8b8;
+  text-align: left;
+  background-color: #000;
+}
+
+.profile-inner {
+  padding-top: 78px;
+  display: grid;
+  grid-template-columns: 2.5fr 1fr;
+  background-color: black;
+  color: white;
+}
+
+.profile-inner h1 {
+  color: rgb(63, 240, 63);
+}
+
+img {
+  width: 100%;
+  border-top: solid 1px green;
+}
+#image-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(25, 25, 25);
+}
+#profile-detail {
+  padding: 40px;
+  display: grid;
+  grid-template-rows: 3fr 1fr;
+  // border-left: 1px solid rgb(21, 199, 21);
+}
+
+#profile-detail input {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(45, 44, 44);
+  border: 1px solid green;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+#profile-detail textarea {
+  width: 100%;
+  border-radius: 5px;
+  background-color: rgb(45, 44, 44);
+  border: 1px solid green;
+  padding: 10px;
+}
+
+.cartBtn-box {
+  display: flex;
+  justify-content: center;
+}
+
+.cartBtn-box button {
+  padding: 10px 50px;
+  background-color: rgb(9, 162, 9);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: 900;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.profile-name h1{
+  margin: 0;
+}
+
+.profile-price p{
+  font-size: 20px;
+}
+
+.profile-name input{
+  width: 100%;
+  border-radius: 5px;
+  background-color: gray;
+
+}
+
+.profile-description p{
+  margin: 0;
+  color: gray;
+}
+
+.profile-edit{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+}
+
+.profile-edit p{
+  font-size: 15px;
+  margin: 0;
+}
+
+.profile-edit button{
+  padding: 10px;
+  margin: 0 10px;
+  background-color: rgb(9, 162, 9);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  font-weight: 900;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.profile-edit button:hover {
+  background-color: rgb(67, 245, 67);
+}
+
+.cartBtn-box button:hover {
+  background-color: rgb(67, 245, 67);
+}
+
+.footer-detail {
+  background-color: rgb(54, 54, 54);
+  color: white;
+  padding: 30px 200px;
+}
+
+.footer-detail h1 {
+  color: white;
+}

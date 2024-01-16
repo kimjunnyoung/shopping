@@ -1,0 +1,157 @@
+#banner {
+    img {
+        width: 100%;
+        vertical-align: middle;
+    }
+    ul{
+        background-color: rgba(255, 255, 255, 0);
+    }
+}
+
+.user-warp{
+    width: 100%;
+    margin: 10px auto;
+    position: relative;
+}
+
+.user-img{
+    width: 100%;
+    vertical-align: middle;
+}
+
+.user-text{
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -50%, -50%);
+    text-align: center;
+    background-color: transparent;
+}
+
+.user-text h1{
+    background-color: transparent;
+    font-size: 3vw;
+    color: white;
+    margin: 0;
+}
+
+.user-text h3{
+    background-color: transparent;
+    font-size: 1.5vw;
+    color: white;
+}
+
+.user-text p{
+    background-color: transparent;
+    font-size: 1vw;
+    color: white;
+}
+
+.user-text p span{
+    margin-left: 10px;
+    color: rgb(27, 164, 27);
+    background-color: #00000000;
+}
+
+.user-text p a{
+    margin-left: 20px;
+    color: white;
+}
+
+.user-text p a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.user-text2{
+    position:absolute;
+    top: 20%;
+    left: 50%;
+    width: 100%;
+    transform: translate( -50%, -50%);
+    text-align: center;
+    background-color: transparent;
+}
+
+.user-text2 h1{
+    background-color: transparent;
+    font-size: 5vh;
+    color: white;
+    margin: 0;
+}
+
+.user-text2 h3{
+    background-color: transparent;
+    font-size: 3vh;
+    color: white;
+}
+
+.user-text2 p{
+    background-color: transparent;
+    font-size: 2vh;
+    color: white;
+}
+
+.user-text2 p span{
+    margin-left: 10px;
+    color: rgb(27, 164, 27);
+    background-color: #00000000;
+}
+
+.user-text2 p a{
+    margin-left: 20px;
+    color: white;
+}
+
+.user-text2 p a:hover{
+    text-decoration: underline;
+    text-decoration-thickness: 1.5px;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: 400px 400px 5px;
+    grid-template-rows: 1fr 1fr 1fr;
+    column-gap: 60px;
+    row-gap: 25px;
+    padding-bottom: 50px;
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+.user-img img{
+  width: 100%;
+  display: block;
+}
+
+.first h1{
+  font-size: 30px;
+}
+
+
+.product-content-box{
+    background-color: rgb(34, 34, 34);
+    padding: 10px;
+}
+
+.product-card {
+    .product-image {
+      width: 200px;
+      height: auto;
+    }
+  }
+  
+.product-buy-button{
+    padding:10px;
+    background-color: #44d62c;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-weight: 900;
+    transition: all 0.5s;
+    cursor: pointer;
+}
+
+.product-buy-button:hover{
+    background-color: rgb(67, 245, 67);
+}

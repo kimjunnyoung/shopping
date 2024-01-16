@@ -1,0 +1,603 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  font-family: "나눔고딕", sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #222;
+}
+
+input,
+section,
+textarea {
+  outline: none;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+.start {
+  opacity: 0;
+}
+
+.end {
+  opacity: 1;
+  transition: all 0.5s;
+}
+
+#header {
+  color: gray;
+  background-color: black;
+  width: 100%;
+  padding: 1vw;
+  position: fixed;
+  z-index: 16;
+  border-bottom: 1px green solid;
+}
+
+#header .inner {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav {
+  display: flex;
+  margin: 0;
+}
+
+.nav li {
+  margin: 0 3vw;
+}
+
+.icon {
+  display: flex;
+  margin: 0;
+}
+
+.icon li {
+  margin: 0 1vw;
+}
+
+.inner h1 {
+  margin: 0;
+}
+
+#header ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header ul i {
+  color: gray;
+  margin: 0px;
+  cursor: pointer;
+}
+
+#header ul li a {
+  color: gray;
+}
+
+#header ul li a:hover {
+  color: rgb(255, 255, 255);
+}
+
+#header ul li i:hover {
+  color: rgb(239, 239, 239);
+}
+
+#header h1 img {
+  width: 50px;
+}
+
+#header .search-results {
+  display: none;
+}
+
+.whiteBg {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 17;
+  padding: 0 12vw;
+}
+
+.modal {
+  display: flex;
+  flex-direction: column;
+  background: black;
+  border-radius: 5px;
+  padding: 30px;
+  width: 100%;
+  max-width: 40vw;
+  border: 1px solid green;
+}
+
+.id,
+.pw {
+  padding: 1vw 0;
+  color: green;
+}
+
+.id h2,
+.pw h2,
+.e-mail h2,
+.modal h1 {
+  color: green;
+}
+
+.id input,
+.pw input,
+.e-mail input {
+  width: 100%;
+  padding: 1vw;
+  border-radius: 5px;
+  background-color: rgb(60, 58, 58);
+  border: none;
+  color: white;
+}
+
+.btn {
+  display: flex;
+  justify-content: space-between;
+  padding: 1vw 0;
+}
+
+.siginUpbtn {
+  padding-top: 2vw;
+}
+
+.siginUpbtn button {
+  width: 100%;
+  padding: 1vw;
+  border: 1px solid green;
+  background-color: black;
+  color: green;
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+.btn button {
+  width: 49%;
+  padding: 1vw;
+  border: 1px solid green;
+  background-color: black;
+  color: green;
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+.btn button:hover {
+  transition: all 0.2s;
+  background-color: green;
+  color: black;
+  cursor: pointer;
+}
+
+.siginUpbtn button:hover {
+  transition: all 0.2s;
+  background-color: green;
+  color: black;
+  cursor: pointer;
+}
+
+.help {
+  display: flex;
+  justify-content: center;
+  padding: 1vw 0;
+}
+
+.help span {
+  margin: 0 1vw;
+  color: white;
+  cursor: pointer;
+}
+
+.close {
+  right: 4vw;
+  font-size: 3vw;
+  align-self: end;
+  cursor: pointer;
+}
+
+.research {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80rem;
+}
+
+.research input:hover {
+  background-color: #646464;
+}
+
+.X {
+  font-size: 1.5rem;
+}
+
+.X:hover {
+  transform: scale(1.5);
+  transition-duration: 1s;
+  color: white;
+}
+
+input::placeholder {
+  font-weight: 50px;
+  text-indent: 500px;
+  color: #ffffffc1;
+}
+
+.research input {
+  color: rgb(255, 255, 255);
+  border: black;
+  width: 70rem;
+  padding: 0.4vw;
+  margin: 0 1vw;
+  background-color: #6b6b6b;
+  border-radius: 25px;
+}
+
+.research span {
+  cursor: pointer;
+}
+
+#footer {
+  color: gray;
+  background-color: rgb(36, 35, 35);
+  padding-top: 30px;
+}
+
+#footer-info > div {
+  display: flex;
+  margin: 0 10%;
+  text-align: center;
+}
+#footer-info > div div {
+  width: 100%;
+  line-height: 2;
+}
+#footer-info > div div h3 {
+  color: green;
+}
+
+#footer h4 {
+  color: white;
+}
+
+#copyright {
+  border-top: solid 1px gray;
+  background-color: rgb(36, 35, 35);
+  text-align: center;
+  padding: 30px;
+}
+
+#footer-copy ul {
+  font-size: 0.7vw;
+  display: flex;
+  padding: 16px 0;
+  justify-content: center;
+}
+#footer-copy ul li {
+  padding: 0 30px;
+  line-height: 1;
+  text-align: center;
+}
+#footer-copy ul li:not(:last-child) {
+  border-right: 1px solid #ccc;
+}
+
+.login-container {
+  display: flex;
+  background-image: url("../public/login.png");
+  background-size: cover;
+  background-position: center;
+  padding-top: 70px;
+  height: 75vh;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-container h2,
+.register-container h2 {
+  color: white;
+  font-weight: 900;
+}
+
+.loginBox,
+.registerBox {
+  border: 1px solid green;
+  width: 400px;
+  background-color: black;
+  padding: 30px 30px 15px 30px;
+}
+
+.register-resultBox {
+  border: 1px solid green;
+  width: 400px;
+  background-color: black;
+  padding: 30px;
+}
+
+.register-result-iconBox{
+  display: flex;
+  justify-content: center;
+ margin: 20px 0;
+  
+}
+
+.register-result-message{
+  display: flex;
+  justify-content: center;
+  font-size: 15px;
+}
+
+.register-result-iconBox i{
+  color: rgb(34, 220, 34);
+  padding: 20px;
+  border-radius: 50%;
+  border: 3px solid rgb(34, 220, 34);
+  font-size: 80px;
+  text-align: center;
+}
+
+.mypageBox {
+  border: 1px solid green;
+  width: 800px;
+  background-color: black;
+  padding: 30px 30px 15px 30px;
+}
+
+.mypageBox h1 {
+  color: white;
+}
+
+.mypage-profileBox {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  background-color: rgb(29, 29, 29);
+  border: 1px solid rgb(23, 207, 23);
+  border-radius: 5px;
+  height: 200px;
+  padding: 20px;
+}
+
+.mypage-profile {
+  width: 90%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("./../public/images/icons/avatar.png");
+}
+
+.myinfo {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.myinfo h2 {
+  color: white;
+  margin: 0;
+}
+
+.mypage-logoutBox {
+  display: flex;
+  padding: 10px;
+  justify-content: end;
+}
+
+.mypage-logoutBox button {
+  background-color: rgb(26, 204, 26);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  font-weight: 900;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.mypage-logoutBox button:hover {
+  background-color: rgb(83, 240, 83);
+}
+
+.inputBox {
+  margin-bottom: 15px;
+}
+
+.inputBox input {
+  margin-top: 4px;
+  border: none;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  padding: 5px;
+  width: 100%;
+  border-radius: 3px;
+}
+
+.loginBtnBox {
+  display: flex;
+  justify-content: center;
+}
+
+.loginBtn {
+  border: 1px solid green;
+  background-color: rgb(37, 37, 37);
+  width: 80%;
+  padding: 10px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.loginBtn:hover {
+  border: 1px solid black;
+  background-color: green;
+}
+
+.login-result {
+  display: flex;
+  justify-content: center;
+}
+
+.login-result p {
+  margin: 0;
+  padding-top: 20px;
+}
+
+.registerBtnBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.registerBtn {
+  color: white;
+  font-weight: 900;
+  margin: 0;
+}
+
+.registerBtn:hover {
+  font-weight: 900;
+}
+
+.iconBox {
+  display: flex;
+  justify-content: space-around;
+  padding: 10px 0px;
+}
+
+.iconBox div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  padding: 10px 0px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.iconBox i {
+  padding-right: 5px;
+}
+
+.naver {
+  background-color: rgb(6, 150, 6);
+  border: 1px solid rgb(6, 150, 6);
+  transition: all 1s;
+}
+
+.naverIcon {
+  font-weight: 900;
+  padding-right: 5px;
+}
+
+.goole {
+  background-color: white;
+  color: rgb(57, 57, 57);
+}
+
+.goole i {
+  color: blue;
+}
+
+.face {
+  background-color: yellow;
+  color: rgb(69, 12, 12);
+}
+
+.hr-sect {
+  display: flex;
+  flex-basis: 100%;
+  align-items: center;
+  color: green;
+  font-size: 15px;
+  margin: 8px 0px;
+}
+.hr-sect::before,
+.hr-sect::after {
+  content: "";
+  flex-grow: 1;
+  background: green;
+  height: 1px;
+  font-size: 0px;
+  line-height: 0px;
+  margin: 0px 16px;
+}
+
+.register-container {
+  background-image: url("https://img.lovepik.com/photo/40065/0762.jpg_wh860.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  padding-top: 90px;
+  height: 115vh;
+  background-color: rgb(37, 37, 37);
+  color: white;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.sexBox {
+  margin-bottom: 10px;
+}
+
+.sexInput {
+  display: flex;
+  justify-content: space-between;
+}
+
+.sexInput label {
+  width: 50%;
+  padding: 5px;
+}
+
+.registerBtnBox button {
+  border: 1px solid green;
+  background-color: rgb(37, 37, 37);
+  width: 80%;
+  padding: 10px;
+  transition: all 0.4s;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: 900;
+}
+
+.registerBtnBox button:hover {
+  border: 1px solid black;
+  background-color: green;
+}
+
+.helperBox {
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.helper {
+  color: rgb(19, 178, 19);
+}
+
+.error input{
+  border: 2px solid red;
+}

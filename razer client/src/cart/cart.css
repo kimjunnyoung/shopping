@@ -1,0 +1,245 @@
+div{
+  box-sizing: content-box;
+}
+
+.cart{
+  padding:2vw;
+}
+
+.container{
+  display: grid;
+  grid-template-columns: 1fr 5fr 1fr 2fr 1fr;
+}
+
+.container div{
+  border: 1px solid rgb(215, 210, 210);
+  padding:10px;
+  color: rgb(215, 210, 210)
+}
+
+.head div{
+  background-color: rgb(12, 133, 12);
+  font-weight: 900;
+}
+
+.cartId, .cartCount, .cartPrice, .cartDel{
+  text-align: center;
+}
+
+.list {
+  background-color: rgb(12, 12, 12);
+}
+
+.cartDel{
+  color:red;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.buyBtn, .refreshBtn {
+  color:green;
+  background-color: black;
+  border: 1px solid green;
+  padding:1vw;
+  margin-top: 2vw;
+  margin-right: 2vw;
+  cursor: pointer;
+  border-radius: 3px;
+  font-weight: 900;
+}
+
+.buyBtn:hover, .refreshBtn:hover{
+  background-color: green;
+  color:black;
+  transition: all 0.3s;
+}
+
+.buyBtnBox{
+  display: flex;
+  justify-content: end;
+}
+
+.payment-container {
+  display: grid;
+  grid-template-columns: 7fr 3fr;
+  gap: 20px;
+  height: 100%;
+  color:white;
+}
+
+.payment-container h1{
+  color:rgb(28, 194, 28);
+}
+
+
+.cartCount input{
+  width: 100%;
+  background-color: rgb(12, 12, 12);
+  border: none;
+  text-align: center;
+  margin-left: 6px;
+}
+
+.list .cartDel{
+  color:red;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+
+.buyList{
+  padding:20px;
+  border: 1px solid rgb(15, 209, 15);
+  border-radius: 5px;
+  background-color: black;
+}
+
+.product-item{
+  margin-bottom: 20px;
+}
+
+.itemGrid{
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+
+.itemTitle{
+  display: flex;
+  justify-content: center;
+  padding:10px;
+  background-color: green;
+  color: black;
+  font-weight: 900;
+  border: 1px solid white;
+}
+
+.itemTitle p{
+  margin: 0;
+}
+
+.itemContent{
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  background-color: rgb(35, 34, 34);
+
+}
+
+.itemContent p{
+  margin: 0;
+  padding-left: 10px;
+}
+
+.infoList{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 20px;
+  border: 1px solid rgb(15, 209, 15);
+  background-color: black;
+}
+
+.eachInfo{
+  margin-bottom: 20px;
+}
+
+.form-group{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  padding: 10px;
+}
+
+.form-group input{
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: 2px solid rgb(31, 209, 31);
+  color: black
+}
+
+.form-group p{
+  margin: 0;
+  line-height: 100%;
+}
+
+.infoTitle{
+  display: flex;
+  justify-content: end;
+  padding:10px;
+  font-weight: 900;
+  font-size: 14px
+}
+
+.infoTitle2{
+  display: flex;
+  align-items: center;
+  padding:10px;
+  font-weight: 900;
+  font-size: 14px
+}
+
+.infoContent{
+  display: flex;
+  padding:10px;
+}
+
+.infoAgree{
+  text-align: center;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgb(26, 208, 26);
+}
+
+.payment-buttonBox{
+  display: flex;
+  justify-content: center;
+}
+
+.payment-method{
+  text-align: center;
+}
+
+.payment-method p{
+  padding-bottom: 30px;
+  border-bottom: 1px solid rgb(26, 208, 26);
+}
+
+.payment-button{
+  border: 1px solid green;
+  background-color: rgb(37, 37, 37);
+  padding: 15px;
+  width: 70%;
+  transition: all 0.4s;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.payment-button:hover {
+  border: 1px solid black;
+  color:black;
+  background-color: green;
+}
+
+.resultPrice p{
+  padding-bottom: 30px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.eachInfo h1{
+  font-weight: 900;
+}
+
+.eachInfo2 h1{
+  padding-top: 20px;
+  border-top: 1px solid rgb(26, 208, 26);
+}
+
+.cartTitle{
+  font-weight: 900;
+  color: rgb(26, 208, 26);
+  padding-top: 50px;
+  padding-left: 30px;
+  margin: 0;
+}

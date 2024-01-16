@@ -1,0 +1,230 @@
+
+
+#mainpage{
+  padding-top: 100px;
+  margin: 0;
+  font-family: Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #000;
+}
+
+.subwebtitle{
+  padding-left: 9vw;
+}
+
+.header1{
+  display: block;
+  margin: 0 auto;
+  max-width: 1920px;
+}
+
+.headertop{
+  position: relative;
+  display: block;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.headerbody{
+  padding: 2.5rem 0.5rem 0;
+}
+
+.bodyse{
+  padding: 2rem !important;
+}
+
+.bodyheader{
+  padding: 0 0.5rem;
+  max-width: 1200px;
+  margin: 0 auto
+}
+
+.pagename{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+  color: #9a9a9a;
+}
+
+.subheader{
+  text-align: left;
+  color: #9a9a9a;
+  margin: 0;
+  padding: 0;
+  font: normal 1.125rem/1.5rem "Roboto";
+  margin-top: -0.2rem;
+}
+
+// .screen{
+//   padding: 5px 10px;
+//   border-radius: 5px;
+//   color: #000;
+//   font-weight: 700;
+//   background-color: #44d62c;
+//   text-transform: uppercase;
+//   text-decoration: none;
+// }
+
+// .click{
+//   opacity: 0;
+//   position: absolute;
+//   top: 40%;
+//   cursor: pointer;
+//   background-color: rgba(133, 133, 133, 0.4);
+//   border-radius: 50px;
+//   height: 50px;
+//   width: 50px;
+//   line-height: 32px;
+//   font-size: 42px;
+//   border: none;
+//   overflow: hidden;
+//   background: 0 0;
+//   z-index: 3;
+// }
+
+.effect{
+  display: grid;
+  grid-template-columns: repeat(10,1fr);
+  gap: 2rem;
+  padding: 0;
+  grid-template-rows: -webkit-max-content;
+  grid-template-rows: max-content;
+}
+
+.scroll{
+  overflow-x: scroll;
+  -ms-scroll-snap-type: x proximity;
+  scroll-snap-type: x proximity;
+  max-width: unset;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.scroll::-webkit-scrollbar {
+	background: #9b6a2f00; /* 스크롤바 뒷 배경 색상 */
+  width: 50%;
+}
+
+.scroll::-webkit-scrollbar-button{
+  width: 10.5rem;
+	overflow: hidden;
+}
+
+.scroll::-webkit-scrollbar-thumb {
+  background: #9195928f; /* 스크롤바 막대 색상 */
+  border-radius: 10px ;
+}
+.scroll::-webkit-scrollbar-track:hover{
+  background: #7675757b; /* 스크롤바 막대 색상 */
+  transform: 2s;
+  border-radius: 10px ;
+}
+
+.effect li {
+  display: grid;
+  grid-template-rows: 298px 1fr;
+  width: 18.625rem;
+  transform: translateX(calc(min(100vw,1920px)/ 2 - 600px));
+  gap: 0;
+  text-align: left;
+  justify-items: center;
+  grid-auto-flow: row;
+  min-width: 0;
+  align-content: flex-start;
+  background-color: #fff9f9;
+  margin-bottom: 20px;
+}
+
+.effect img{
+  background-color: rgb(20, 19, 19);
+}
+
+.effect a{
+  background-color: #111;
+}
+
+.effectbody{
+  gap: 1rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 220px;
+  justify-content: space-between;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: rgb(41, 40, 40);
+  height: 100%;
+}
+
+.effectfooter{
+  display: grid;
+  gap: 0.5rem;
+  color: #eee;
+  position: relative;
+  background-color: rgb(41, 40, 40);
+}
+
+.effectbodyse{
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  justify-content: space-between;
+  align-items: flex-end;
+  font: normal normal bold 14px/14px Roboto;
+}
+
+.effectbodyse a:hover{
+  color: black;
+  background-color: #5cda48;
+}
+
+.effectbodyfo{
+  align-self: center;
+}
+
+.effectbody a{
+  padding: 5px 10px;
+    border-radius: 5px;
+    color: #000;
+    font-weight: 700;
+    background-color: #44d62c;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.effectbodyse p{
+  margin: 0;
+  color: #eee;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+#mainpage h1{
+  color: rgb(35, 176, 35);
+  font-size: 2vw;
+  margin:0;
+}
+
+#mainpage h2{
+  color: rgb(255, 255, 255);
+  font-size: 1.1rem;
+  line-height: 25px;
+  font-weight: 400;
+  margin: 0;
+}
+
+#mainpage h3{
+  text-align: left;
+  font-size: .875rem;
+  font-weight: 300;
+  color: #888;
+  line-height: 1.3;
+}
+
+#mainpage p{
+  color: rgb(255, 255, 255);
+  font-size: 1vw;
+}

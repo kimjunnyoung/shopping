@@ -1,0 +1,72 @@
+#upload-img-placeholder {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid green;
+  background: rgb(41, 40, 40);
+  margin-left: 16px;
+}
+#upload-img-placeholder > img {
+  width: 50px;
+  height: 50px;
+}
+#upload-img-placeholder > span {
+  font-size: 14px;
+  color: rgb(195, 194, 204);
+}
+
+.upload-label {
+  width: 100px;
+  font-size: 18px;
+  text-align: left;
+  color: white;
+  padding-right: 10px;
+}
+
+#upload-container {
+  padding-top: 120px;
+  height: 80vw;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  background-image: url("https://p4.wallpaperbetter.com/wallpaper/346/657/96/cool-desktop-33-wallpaper-preview.jpg");
+}
+
+.uploadbg {
+  background-color: black;
+  margin: 0 400px;
+  border: 1px solid green;
+  padding: 30px;
+}
+
+.detailcategory {
+  margin-right: 10px;
+}
+
+#upload-container h1 {
+  color: rgb(16, 164, 16);
+  margin-bottom: 50px;
+  font-weight: 900;
+}
+
+.uploadbtnBox {
+  display: flex;
+  justify-content: end;
+  padding-right: 20px;
+}
+
+#upload-container button {
+  background-color: rgb(16, 159, 16);
+  transition: all 0.5s;
+  font-weight: 900;
+  border: none;
+  margin-top: 20px;
+}
+
+#upload-container button:hover {
+  background-color: rgb(69, 216, 69);
+  color: black;
+}
